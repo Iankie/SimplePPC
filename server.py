@@ -2,7 +2,7 @@ import socket
 import random
 import threading
 
-host = "127.0.0.1"
+host = "0.0.0.0"
 port = 5000
 
 operators = ["+", "-", "*"]
@@ -13,9 +13,9 @@ op_func = {
     '*': lambda a, b: a * b, 
 }
 
-tasks = 10
-flag = 'flag{123_calc_flag_456}'
-timeout_duration = 5  
+tasks = 100
+flag = 'CTF{ppc_175_51mpl3}'
+timeout_duration = 3  
 
 def handle_client(conn, address):
     print(f"Connected from: {str(address)}")
