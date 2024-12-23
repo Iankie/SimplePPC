@@ -20,7 +20,7 @@ while True:
         print("Server has closed the connection.")
         break
 
-    match = re.search(r'Solve this: (\d+) ([\+\-\*]) (\d+):', server_response)
+    match = re.search(r'Solve this: (\d+) ([\+\-\*]) (\d+)', server_response)
     if match:
         var1 = int(match.group(1))
         var2 = int(match.group(3))
